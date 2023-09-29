@@ -1,0 +1,22 @@
+#!/bin/bash
+
+echo "Simple Calculator Menu:"
+echo "a. Addition"
+echo "s. Subtraction"
+echo "m. Multiplication"
+echo "d. Division"
+echo "q. Quit"
+
+read -p "Enter your choice (a/s/m/d/q): " choice
+
+ if [[ "$choice" == "q" ]]; then
+    echo "Thank you"
+    exit 0
+
+
+ elif [[ "$choice" == "a" || "$choice" == "s" || "$choice" == "m" || "$choice" == "d" ]]; then
+    read -p "Enter first number: " num1
+    read -p "Enter second number: " num2
+
+    case "$choice" in
+      a)
