@@ -1,0 +1,10 @@
+#!/bin/bash
+if [ -w "$1" ]; then
+        if [ -e "$1" ]; then
+                vim $1
+        else
+                echo "Permission denied"
+        fi
+else
+        echo "File doesn't exist"
+fi
