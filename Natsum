@@ -1,0 +1,13 @@
+#!/bin/bash
+
+count=1
+sum=0
+
+echo "The first 20 natural numbers are:"
+while [ $count -le 20 ]; do
+    echo $count
+    sum=$((sum + count))
+    count=$((count + 1))
+done
+
+echo "The sum of the first 20 natural numbers is: $sum"
