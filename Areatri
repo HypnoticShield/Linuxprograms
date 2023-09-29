@@ -1,0 +1,4 @@
+#!/bin/bash
+read -p "enter base of triangle:" b
+read -p "enter height of triangle:" h
+echo "0.5*$b*$h" | bc
